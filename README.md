@@ -4,7 +4,7 @@ Resources:
     Properties:
       ImageId: ami-06ca3ca175f37dd66
       InstanceType: t3.micro  
-      KeyName: my-key-pair  
+      ami-06ca3ca175f37dd66
       SecurityGroupIds:
         - !Ref MySecurityGroup  
       BlockDeviceMappings:
