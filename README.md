@@ -2,9 +2,9 @@ Resources:
   MyInstance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-06ca3ca175f37dd66
+      ImageId: ami-06ca3ca175f37dd66 
       InstanceType: t3.micro  
-      ami-06ca3ca175f37dd66
+      KeyName: Mykeypairname
       SecurityGroupIds:
         - !Ref MySecurityGroup  
       BlockDeviceMappings:
@@ -21,7 +21,7 @@ Resources:
         - IpProtocol: tcp
           FromPort: 22
           ToPort: 22
-          CidrIp: 0.0.0.0/0  # Allow SSH access from anywhere
+          CidrIp: 0.0.0.0/0  
       
 Outputs:
   InstanceId:
